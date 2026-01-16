@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket height</title>
+    <style>
+        .field {
+            border: 1px solid slateblue;
+            padding: 40px 0;
+        }
+
+        .bat {
+            transition: transform 0.1s;
+        }
+
+        .field img {
+            width: 30%;
+        }
+
+        .field:hover .bat {
+            transform: rotate(-60deg);
+            transform-origin: top right;
+        }
+
+        .ball {
+            background-color: red;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            position: relative;
+            left: 500px;
+            transition: transform 1s 0.1s ease-out;
+        }
+
+        .field:hover .ball {
+            transform: translate(1000px, -500px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="field">
+        <img src="./images/cricket-bat.png" alt="" class="bat">
+        <div class="ball"></div>
+    </div>
+</body>
+
+</html>
